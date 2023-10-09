@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighter Class Guide</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div class="content">
+    <img src="images/championicon.png" alt="fighter" class="classicon">
+    <p class="classdescription">
+        You approach the complex problems posed by combat with one distinctly effective solution - you hit those problems, really quite hard.
+    </p>
+    <h1 class="builds">Champion Crit Build (B Tier)<br></h1>
+    <h2 align="left" style="font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif'">Build Strengths/Weaknesses</h2>
+    <div class="pros-cons-container">
+        <div class="pros-container">
+            <h2 class="heading">Strengths</h2>
+            <ul class="pros">
+                <li>Easy to learn</li>
+                <li>Strong front-line</li>
+                <li>High crit-chance (43.75%)</li>
+            </ul>
+        </div>
+        <div class="cons-container">
+            <h2 class="heading">Weaknesses</h2>
+            <ul class="cons">
+                <li>Weak in the early parts of the game</li>
+                <li>Weakest fighter subclass</li>
+                <li>Lack of skill variety</li>
+                <li>Lack of item variety</li>
+            </ul>
+        </div>
+    </div>
+    <h2 align="left" style="font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif'">Subclass Features</h2>
+    <table align="center" style="width: 80%">
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 999">
+                <em>Improved Critical Hit (Requires Level 3)</em>
+                <div class="tooltip-content">
+                    <img src="images/improvedcriticalhit.png" alt="Improved Critical Hit">
+                    <p style="font-size: 22px">Improved Critical Hit<br>The number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack.</p>
+                </div>
+            </td>
+            <td>The most significant subclass feature of Champion. By default, a player has 5% crit chance (9.75% with advantage). With this passive, that chance doubles to 10%. When considering advantage on attack rolls, this boosts an attack's crit chance to 19%.</td>
+        </tr>
+        <tr>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 998">
+                <em>Remarkable Athlete: Jump (Requires Level 7)</em>
+                <div class="tooltip-content">
+                    <img src="images/remarkablejump.png" alt="Remarkable Athlete Jump">
+                    <p style="font-size: 20px">Remarkable Athlete: Jump<br>You're a master of your own body, your athletic prowess extended beyond the usual. Your Jump distance is increased by 3m.</p>
+                </div>
+            </td>
+            <td>Synergizes well with the Jump spell. Jumping is one of the best ways to reach your enemy until you acquire the best method in Act 3.</td>
+        </tr>
+        <tr>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 997">
+                <em>Remarkable Athlete: Proficiency (Requires Level 7)</em>
+                <div class="tooltip-content">
+                    <img src="images/remarkableproficiency.png" alt="duelingstyle">
+                    <p style="font-size: 16px">
+                        Remarkable Athlete: Proficiency
+                        <br>
+                        You're a master of your own body, your athletic prowess extended beyond the usual. You can add half of your Proficiency Bonus to any Strength, Dexterity, and Constitution Checks that you are not Proficient in.
+                    </p>
+                </div>
+            </td>
+            <td>A decent passive that makes the fighter more proficient in various checks. The checks are as follows: Strength (Athletics) and Dexterity (Acrobatics, Sleight of Hand, Stealth)</td>
+        </tr>
+        <tr>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 996">
+                <em>Additional Fighting Style (Requires Level 10)</em>
+                <div class="tooltip-content">
+                    <img src="images/defensestyle.png" alt="Archery Icon">
+                    <p style="font-size: 19px">Additional Fighting Style<br>Select one additional fighting style: Archery, Defence, Duelling, Great Weapon Fighting, Protection, Two-Weapon Fighting.</p>
+                </div>
+            </td>
+            <td>This allows the Champion subclass to have two fighting styles (Level 1 and Level 10). For optimization, the two fighting styles to take are Defence and Great Weapon Fighting.</td>
+        </tr>
+    </table>
+    <h2 align="left" style="font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif'">Character Creation/Feats</h2>
+    <p align="left"><strong>Level 1:</strong></p>
+    <p align="left">
+        Race: Half-Orc
+    </p>
+    <p align="left">Fighting Style: 
+        <span class="tooltip-container tooltip-trigger-container" style="z-index: 996;">
+        <em>Great Weapon Fighting</em>
+        <span class="tooltip-content">
+            <img src="images/greatweaponfightingstyle.png" alt="Great Weapon Fighting" style="border: 1px solid #D73F41;">
+            <span style="font-size: 20px;">Great Weapon Fighting<br>When you roll a 1 or 2 on a damage die for an attack with a Two-Handed melee weapon, that die is rerolled once.</span>
+        </span>
+        </span>
+    </p>
+    <p align="left">
+        <u>Base Stats</u><br>
+        Strength: 17<br>
+        Dexterity: 14<br>
+        Constitution: 14<br>
+        Intelligence: 10<br>
+        Wisdom: 12<br>
+        Charisma: 8
+    </p>       
+    <p align="left"><strong>Level 4 (Feat 1):</strong></p>
+    <p align="left"><span class="tooltip-container tooltip-trigger-container" style="z-index: 996;">
+        <em>Great Weapon Master</em>
+        <span class="tooltip-content">
+            <img src="images/greatweaponmastericon.png" alt="Great Weapon Master" style="border: 1px solid #D73F41;">
+            <span style="font-size: 20px;">Great Weapon Master<br>When attacking with Heavy melee weapons you are Proficient with, Attack Rolls take a -5 penalty, but their damage increases by 10.</span>
+        </span>
+        </span> is the recommended feat for level 4. With the proper party composition, the -5 attack roll can be negated (i.e. advantage, bless). The +10 damage at level 4 is significant, especially for destroying walls/chests. The effect can also be toggled on/off, adding an extra layer to a very simple class.</p>
+    <p align="left"><strong>Level 6 (Feat 2):</strong></p>
+    <p align="left"><span class="tooltip-container tooltip-trigger-container" style="z-index: 995;">
+            <em>Ability Improvement:</em>
+        <span class="tooltip-content">
+            <img src="images/abilityimprovementicon.png" alt="Ability Improvement">
+            <span style="font-size: 20px;">Ability Improvement<br>Increase one Ability Score by 2, or two Ability Scores by 1. You can't increase an Ability Score above 20 using this feature.</span>
+        </span>
+        </span> +2 Strength<br>
+        With the inclusion of Auntie Ethel's Hair, this will push the fighter to 20 Strength at level 6. </p>
+    <p align="left"><strong>Level 8 (Feat 3):</strong></p>
+    <p align="left"><span class="tooltip-container tooltip-trigger-container" style="z-index: 995;">
+            <em>Savage Attacker</em>
+        <span class="tooltip-content">
+            <img src="images/savageattackericon.png" alt="Savage Attacker">
+            <span style="font-size: 20px;">Savage Attacker<br>When making melee weapon attacks, you roll your damage dice twice and use the highest result.</span>
+        </span>
+        </span>
+        is the recommended feat for level 8. SA does stack with 
+            <span class="tooltip-container tooltip-trigger-container" style="z-index: 994;">
+            <em>Great Weapon Fighting</em>
+            <span class="tooltip-content">
+                <img src="images/greatweaponfightingstyle.png" alt="Great Weapon Fighting" style="border: 1px solid #D73F41">
+                <span style="font-size: 20px;">Great Weapon Fighting<br>When you roll a 1 or 2 on a damage die for an attack with a Two-Handed melee weapon, that die is rerolled once.</span>
+            </span>
+            </span> in an interesting way. GWF checks if the player rolls either a 1 or 2 damage roll, and rerolls them. SA uses the newly rerolled results as the base for its passive effect, and chooses the largest individual numbers rolled overall (not the largest set of numbers).<br><br>
+            Example: Greatsword attack roll (2d6 die). The initial result is 1 + 5. Since a 1 was rolled, GWF rerolls the first die (1) once. Let's say the reroll result is 3. The current result is now 3 + 5. SA takes that and rerolls both numbers. Let's say the SA rolls 2 + 6. Now, SA will take the largest of both numbers to create a set of 3 + 6. This effect is applied to elemental weapon damage as well.</p>
+
+    <p align="left"><strong>Level 12 (Feat 4):</strong></p>
+    <p align="left"><span class="tooltip-container tooltip-trigger-container" style="z-index: 993">
+            <em>Alert</em>
+        <span class="tooltip-content">
+            <img src="images/alerticon.png" alt="Alert" style="border: 1px solid #D73F41">
+            <span style="font-size: 20px;">Alert<br>You gain a +5 bonus to Initiative and can't be Surprised.</span>
+        </span>
+        </span> is the recommended feat for level 12. The +5 initiative is to assure that the fighter gets to be one of the first people to take their turn. A fighter at level 12 can easily dispatch a few enemies in one turn.</p>  
+  <h1 class="builds">Act 1 BIS/Notable Upgrades <br></h1>
+    <p align="center"><strong>Weapons</strong></p><br>
+    <table align="center" style="width: 100%">
+        <tr>
+            <th>Item-Type</th>
+            <th>Item Name</th>
+            <th>Source</th>
+        </tr>
+        <tr>
+            <td style="text-align: center">Greatsword</td>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 9999">
+                <em>Sussar Greatsword</em>
+                <div class="tooltip-content">
+                    <img src="images/sussargreatsword.png" alt="Haste Helm" style="border: 2px solid #1873C7">
+                    <p style="font-size: 20px"><strong>Sussar Greatsword</strong><br><span style="color: #1873C7">Rare</span>Damage Type: Slashing<br>2d6 + 1 + Strength Modifier Damage<br>Silences targets on hit.</p>
+                </div>
+            </td>
+            <td>Finish the Masterwork Weapon</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Shortbow</td>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 9998">
+                <em>Hunting Shortbow</em>
+                <div class="tooltip-content">
+                    <img src="images/huntingshortbow.png" alt="Hunting shortbow" style="border: 2px solid green">
+                    <p style="font-size: 18px"><strong>Hunting Shortbow</strong><br><span style="color: green">Uncommon</span>Cast Hunter's Mark once per long rest.
+                    Feller of Monsters: You have Advantage against Monstrosity type enemies.</p>
+                </div>
+            </td>
+            <td>Dammon (The Grove)</td>
+        </tr>
+    </table>
+    <p align="center"><strong>Armour</strong></p>
+    <table align="center" style="width: 100%">
+        <tr>
+            <th>Item-Type</th>
+            <th>Item Name</th>
+            <th>Source</th>
+        </tr>
+        <tr>
+            <td style="text-align: center">Helm</td>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 9999">
+                <em>Haste Helm</em>
+                <div class="tooltip-content">
+                    <img src="images/hastehelm.png" alt="Haste Helm" style="border: 2px solid #1873C7">
+                    <p style="font-size: 20px"><strong>Haste Helm</strong><br><span style="color: #1873C7">Rare</span>Smooth Start: At the start of combat, the wearer gains Momentum for 3 turns.</p>
+                </div>
+            </td>
+            <td>Blighted Village (X:32 Y:403)</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Amulet</td>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 9998">
+                <em>Amulet of Misty Step</em>
+                <div class="tooltip-content">
+                    <img src="images/amuletmistystep.png" alt="Amulet of Misty Step" style="border: 2px solid green">
+                    <p style="font-size: 20px"><strong>Amulet of Misty Step</strong><br><span style="color: green">Uncommon</span>The wearer of this item can cast Misty Step once per short rest.</p>
+                </div>
+            </td>
+            <td>Goblin Camp (X:386 Y:8)</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Chest Armour</td>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 9997">
+                <em>Adamantite Splint Armor</em>
+                <div class="tooltip-content">
+                    <img src="images/adamantitesplintarmor.png" alt="Adamantite Splint Armor" style="border: 2px solid deeppink">
+                    <p style="font-size: 14px"><strong>Adamantite Splint Armor</strong><br>
+                      <span style="color: deeppink">Very Rare</span>
+                    Magical Plate: All incoming damage is reduced by 2.<br>
+                    Intense Adamantine Backlash: When a melee attack hits you, the attacker is sent Reeling for 3 turns.<br>
+                    Attackers can't land Critical Hits on the wearer.</p>
+                </div>
+            </td>
+            <td>The Adamantine Forge</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Gloves</td>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 9996">
+                <em>Gloves of the Growling Underdog</em>
+                <div class="tooltip-content">
+                    <img src="images/underdoggloves.png" alt="Underdog Gloves" style="border: 2px solid green">
+                    <p style="font-size: 15px"><strong>Gloves of the Growling Underdog</strong><br><span style="color: green">Uncommon</span>
+                    Underdog's Bravery: The wearer gains Advantage on melee attack rolls while surrounded by 2 or more foes. Strength Saving Throws +1</p>
+                </div>
+            </td>
+            <td>Shattered Sanctum (X:298 Y:66)</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Boots</td>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 9995">
+                <em>Disintegrating Night Walkers</em>
+                <div class="tooltip-content">
+                    <img src="images/nightwalkerboots.png" alt="Nightwalker boots" style="border: 2px solid deeppink">
+                    <p style="font-size: 15px"><strong>Disintegrating Night Walkers</strong><br><span style="color: deeppink">Very Rare</span>
+                    Night Walker: Can't be Enwebbed, Entangled, or Ensnared and can't slip on Grease or Ice.
+              <br>Misty Step: Cast the spell Misty Step once per Short Rest.</p>
+                </div>
+            </td>
+            <td>Nere (Grymforge Cave-in)</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Ring 1</td>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 9994">
+                <em>Caustic Band</em>
+                <div class="tooltip-content">
+                    <img src="images/causticband.png" alt="Caustic band" style="border: 2px solid green">
+                    <p style="font-size: 20px"><strong>Caustic Band</strong><br><span style="color: green">Uncommon</span>
+                    Malefic Excretion: Your weapon attacks also deal 2 Acid damage.</p>
+                </div>
+            </td>
+            <td>Derryth Bonecloak (Underdark)</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Ring 2</td>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 9993">
+                <em>Crusher's Ring</em>
+                <div class="tooltip-content">
+                    <img src="images/crusherring.png" alt="Underdog Gloves" style="border: 2px solid green">
+                    <p style="font-size: 22px"><strong>Crusher's Ring</strong><br><span style="color: green">Uncommon</span>
+                    Movement speed increased by 3m.</p>
+                </div>
+            </td>
+            <td>Gnolls (X:223 Y:312)</td>
+        </tr>
+    </table>
+	<p align="left"><strong>Other Notable Items</strong></p>
+    <p align="left">
+        <span class="tooltip-container tooltip-trigger-container" style="z-index: 9992;">
+            <em>Amulet of Branding:</em>
+            <span class="tooltip-content">
+                <img src="images/amuletofbranding.png" alt="Amulet of Branding" style="border: 2px solid #1873C7;">
+                <span style="font-size: 14px;">Amulet of Branding<br><span style="color: #1873C7">Rare</span>Can cast Brand the Weak once per long rest. Expose the weak points of an enemy. They become Vulnerable to Bludgeoning, Slashing, or Piercing damage. This effect lasts 3 turns, or until the target takes damage.</span>
+            </span>
+        </span> This amulet is one of the only ways to apply Vulnerability (double damage) to enemies in the game. The ideal way to use this amulet's effect is to give it to a companion (one with high initiative) to apply the effect for the fighter. It's useful on Tactician for the more difficult fights early on in the game while the Fighter is still weak.
+    </p>
+    <p align="left">
+        <span class="tooltip-container tooltip-trigger-container" style="z-index: 9991;">
+            <em>Ring of Protection:</em>
+            <span class="tooltip-content">
+                <img src="images/ringofprotection.png" alt="Ring of protection" style="border: 2px solid #1873C7;">
+                <span style="font-size: 22px;"><strong>Ring of Protection</strong><span style="color: #1873C7">Rare</span>Armour Class +1<br>Saving Throw +1</span>
+            </span>
+        </span> This ring is the one of the best rings in the game, even when considering all of the act 3 alternatives. It does require the player to follow specific steps to receive it though. Read more HERE.
+    </p>
+    <script src="script.js"></script>
+	</div>	
+</body>
+</html>

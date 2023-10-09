@@ -1,0 +1,284 @@
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-trigger-container {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    color: black;
+}
+
+span {
+    display: block;
+    color: white;
+}
+
+.tooltip-trigger {
+    display: inline-block;
+}
+
+.tooltip-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    width: 450px;
+}
+
+.tooltip-content img {
+    max-width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid lightblue;
+}
+
+.tooltip-content p {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.tooltip-trigger-container:hover .tooltip-content {
+    display: block;
+}
+
+.tooltip-trigger-container:hover .tooltip-content.active {
+    position: fixed;
+    top: calc(var(--cursor-y) - 10px);
+    left: calc(var(--cursor-x) + 10px);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    font-size: 18pt;
+}
+
+th {
+    background-color: transparent;
+    text-align: center;
+}
+
+.nowrap-cell {
+    white-space: nowrap;
+}
+
+p {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    font-size: 18pt;
+}
+
+p.classdescription {
+    text-align: center;
+    font-style: italic;
+    font-size: 16pt;
+}
+
+p.classdetails {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 16pt;
+    text-align: center;
+}
+
+img.classicon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+h1.builds {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    text-align: left;
+    font-size: 22pt;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    align: left;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    font-size: 18pt;
+}
+
+#container {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+#clickText {
+    cursor: pointer;
+    color: black;
+    text-decoration: underline;
+}
+
+body {
+    text-align: center;
+    background-image: url('https://cdn.wccftech.com/wp-content/uploads/2023/07/BG3_CityReveal_00-scaled.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+.options-table {
+    width: 100%;
+}
+
+.options-cell {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+
+.options-cell.selected {
+    background-color: lightyellow;
+}
+
+.options-cell:hover {
+    background-color: lightyellow;
+}
+
+.dropdown {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 10px;
+    position: absolute;
+}
+
+.info {
+    background-color: transparent;
+    display: none;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#Half-OrcInfo {
+    display: block;
+}
+
+.illithid-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+#illithid-image {
+    height: auto;
+    width: 1500px;
+    max-width: 100%;
+}
+
+.subclassimg-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    max-width: 100%;
+}
+
+.image-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.pros-cons-container {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    display: flex;
+    max-width: 700px;
+    margin: 32px auto;
+    background-color: white;
+}
+
+.pros-cons-container .heading {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 16px 24px;
+}
+
+.pros-cons-container .pros-container .heading {
+    background: #058B1D;
+}
+
+.pros-cons-container .cons-container .heading {
+    background: #CB0B0B;
+}
+
+.pros-cons-container .pros-container ul li::before {
+    content: "✓";
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    padding-right: 16px;
+    color: #02c39a;
+    display: block;
+}
+
+.pros-cons-container .cons-container ul li::before {
+    content: "✘";
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    padding-right: 16px;
+    color: #e63946;
+    display: block;
+}
+
+.pros-cons-container .pros-container,
+.pros-cons-container .cons-container {
+    flex: 1;
+}
+
+.pros-cons-container .pros {
+    border-right: 1px solid #eee;
+}
+
+.pros-cons-container ul {
+    padding: 8px 0;
+    list-style: none;
+    margin: 0;
+}
+
+.pros-cons-container ul li {
+    padding: 16px 32px;
+    font-size: 16px;
+    line-height: 2;
+    display: flex;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighter Class Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="content">
+    <img src="images/fightericon.png" alt="fighter" class="classicon">
+    <p class="classdescription">
+        Fighters have mastered the art of combat, wielding weapons with unmatched skill and wearing armor like a second skin.
+    </p>
+    <p>
+        The Fighter is the most versatile class in Baldur's Gate 3, allowing the player to use all martial weapons, simple weapons, and all armor types at level 1. Whether the player wants to specialize in ranged or melee combat, the fighter excels at both. However, one of the drawbacks to such a versatile class is that it is considered one of the weakest classes in the early game. Once the fighter reaches level 5 this is no longer the case, becoming a formidable class. By level 12, the fighter comes into its own as one of the strongest classes in a pure damage-per-turn discussion.
+    </p>
+    <p> 
+        <br>
+        The Fighter has three subclasses: <em>Battle Master</em>, <em>Eldritch Knight</em>, and <em>Champion</em>. Unfortunately, <em>Champion</em> is one of the worst subclasses in the game. The best subclass feature it provides (roll a 19 to crit instead of 20) is useful, but there are other methods to obtain this bonus as well as abilities in the game that guarantee crits. Both <em>Battle Master</em> and <em>Eldritch Knight</em> provide more damage, utility, and viability in a party composition. If you're inexperienced with how to build the fighter class, read on below about how to build the base fighter class before selecting a subclass.
+    </p>
+    <div class="subclassimg-container">
+        <div class="image-wrapper">
+            <img src="images/battlemastericon.png" alt="Battlemaster">
+            <p>Battlemaster</p>
+        </div>
+        <div class="image-wrapper">
+            <img src="images/eldritchknighticon.png" alt="Eldritch Knight">
+            <p>Eldritch Knight</p>
+        </div>
+        <div class="image-wrapper">
+            <a href="Champion.html"><img src="images/championicon.png" alt="Champion"></a>
+            <p>Champion</p>
+        </div>
+    </div>
+    <h1 class="builds">
+        Level 1 Stat Distribution
+        <br>	
+    </h1>
+    <p align="left">
+        In every fighter build, strength should be prioritized with the +2 bonus. An important thing to note is that keeping even numbers for each stat is ideal for proficiency bonuses. This is difficult to do with the level 1 stat distribution, but players can always redo their stat distributions later in the game. Using Strength as an example, 16 Strength provides a +3 to Strength Checks and 18 Strength provides a +4 to Strength Checks. 17 Strength will still only provide a +3 bonus, so keep that in mind.
+    </p>
+    <p align="left"> The recommended stat distribution for a fighter at level 1 is:</p>
+    <ul>
+        <li align="left">Strength: 17</li>
+        <li align="left">Dexterity: 14</li>
+        <li align="left">Constitution: 14</li>
+        <li align="left">Intelligence: 10</li>
+        <li align="left">Wisdom: 12</li>
+        <li align="left">Charisma: 8</li>
+    </ul>
+    <br>
+    <p align="left">
+        Although it's not ideal to leave Strength at 17, there is a method early on in the beginning of the game that will allow the player to acquire +1 Strength to make it an even 18. By the end of the game, it is possible to acquire 24 Strength without elixirs and 27 with an elixir.
+    </p>
+    <h1 class="builds">
+        Fighting Style
+        <br>	
+    </h1>
+    <p align="left">
+        Fighters are allowed to pick one fighting style at level 1. There are six fighting styles in total that cover all types of combat.
+    </p>
+    <table align="center" style="width: 80%">
+        <tr>
+            <th>Fighting Style</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 999">
+                Archery
+                <div class="tooltip-content">
+                    <img src="images/archerystyle.png" alt="Archery Icon">
+                    <p style="font-size: 22px">Archery<br>You gain a +2 bonus to Attack Rolls you make with ranged weapons.</p>
+                </div>
+            </td>
+            <td>This is the ideal fighting style for a character focusing on ranged attacks.</td>
+        </tr>
+        <tr>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 998">
+                Defence
+                <div class="tooltip-content">
+                    <img src="images/defensestyle.png" alt="Silver Sword of the Astral Plane">
+                    <p style="font-size: 22px">Defence<br>You gain a +1 bonus to Armour Class while wearing Armour.</p>
+                </div>
+            </td>
+            <td>One of the best fighting styles since in most situations a fighter will be using armor. If the player plans on playing with a focus on defense, this is the best option.</td>
+        </tr>
+        <tr>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 997">
+                Duelling
+                <div class="tooltip-content">
+                    <img src="images/duelingstyle.png" alt="duelingstyle">
+                    <p style="font-size: 18px">Duelling<br>When you are wielding a melee weapon that is not Two-Handed or Versatile in one hand, and no weapon in the other, you deal an additional 2 damage with that weapon.
+                    </p>
+                </div>
+            </td>
+            <td>This works with a shield, so this is the best option for a one-handed/shield build. There are weapons in the game that benefit from being used by itself, but most are near the end of the game. For that reason, I would only recommend this fighting style if you plan on using a shield at the start of the game.</td>
+        </tr>
+        <tr>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 996">
+                <span class="nowrap-cell" style="z-index: 996">Great Weapon Fighting</span>
+                <div class="tooltip-content">
+                    <img src="images/greatweaponfightingstyle.png" alt="Archery Icon" style="border: 1px solid #D73F41">
+                    <p style="font-size: 20px">Great Weapon Fighting<br>When you roll a 1 or 2 on a damage die for an attack with a Two-Handed melee weapon, that die is rerolled once.</p>
+                </div>
+            </td>
+            <td>This is the best fighting style to take if the player is focused on pure damage, specifically with two-handed weapons. The interesting aspect of this fighting style is that the passive applies to versatile weapons wielded with both hands, and added damage dice rolls from sources like superiority dice, divine smite, and elemental damage sources. For example, if the player rolls a 1d4 fire damage roll and rolls a 1 or 2, it rerolls once. This effect also synergizes with <strong>Savage Attacker</strong>.</td>
+        </tr>
+        <tr>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 995">
+                Protection
+                <div class="tooltip-content">
+                    <img src="images/protectionstyle.png" alt="Protection Icon" style="border: 1px solid #B533E7">
+                    <p style="font-size: 16px">Protection<br>When you have a Shield, impose Disadvantage on an enemy who attacks one of your allies when you are within  1.5 m. You must be able to see the enemy.
+                    </p>
+                </div>
+            </td>
+            <td>This sounds useful but it is one of the worst fighting styles to take. This fighting style is actually a reaction, so to get any benefit from this fighting style you have to use your one reaction per turn. Another issue with this is that you have to be within 1.5 meters of a party member. The physically weak companions (i.e. low Constitution, low Armour Class) should not be within 1.5 meters of a melee front-line.</td>
+        </tr>
+        <tr>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 994">
+                Two-Weapon Fighting
+                <div class="tooltip-content">
+                    <img src="images/twoweaponstlye.png" alt="Protection Icon">
+                    <p style="font-size: 20px">Two-Weapon Fighting<br>When you make an offhand attack, you can add your Ability Score Modifier to the damage of the attack.
+                    </p>
+                </div>
+            </td>
+            <td>Useful if the player wants to play a dual-wielding fighting. However, in most cases the most optimal two-weapon builds comes from using two Hand Crossbows. A hand crossbow in the offhand already adds Dexterity Ability Score Modifier to the damage of the attack without Two-Weapon Fighting. Fighter is not the best class for dex-based builds, but it's still viable.</td>
+        </tr>
+    </table>
+
+    <h1 class="builds">
+        Races
+        <br>	
+    </h1>
+    <p align="left">
+    Any race in Baldur's Gate 3 is viable with any class, but some are more tailored to the strengths of a specific class. In the fighter's case, the most optimal races (and their respective traits) are listed below:
+    </p>
+    <p align="left" id="clickText">SPOILERS: CLICK AT YOUR OWN RISK<br></p>
+    <div id="container">
+        <p align="left">Ascended Vampire Astarion (BEST RACE): In act 3, Astarion (as a companion or origin character) can become an asceneded vampire. This give him +1d10 necrotic damage on weapon and unarmed attack rolls. In terms of flat damage, this is the objective best race for fighter in terms of raw damage. However, this requires the player to make an evil decision and is only avaiable in the last act of the game.</p>
+    </div>
+    <div class="container">
+        <table class="options-table"><br>
+            <tr>
+                <td class="options-cell" onclick="toggleInfo('Half-Orc', this)">Half-Orc</td>
+                <td class="options-cell" onclick="toggleInfo('Githyanki', this)">Githyanki</td>
+                <td class="options-cell" onclick="toggleInfo('Duergar', this)">Duergar Dwarf</td>
+            </tr>
+        </table>
+    </div>
+        
+    <div class="info" id="Half-OrcInfo">
+        <ul>
+            <li><strong>Savage Attacks:</strong> When you land a critical hit with a melee weapon attack, you deal an extra dice of weapon damage.</li>
+            <li><strong>Relentless Endurance:</strong> If you reach 0 hit points, you regain 1 hit points instead of becoming downed.</li>
+            <li><strong>Darkvision:</strong> Can see in the dark up to 12m.</li>
+        </ul>
+    </div>
+        
+    <div class="info" id="GithyankiInfo">
+        <ul>
+            <li><strong>Astral Knowledge:</strong> Gain proficiency in all skills of a chosen ability until long rest. </li>
+            <li><strong>Githyanki Psionics Mage Hand (Level 1):</strong> Create an invisible spectral hand that can manipulate and interact with objects.</li>
+            <li><strong>Githyanki Psionics Jump (Level 3):</strong> triple a creature's jumping distance once per long rest.</li>
+            <li><strong>Githyanki Psionics Misty Step (Level 5):</strong> Surrounded by silver mist, you teleport to an unoccupied space you can see once per long rest. </li>
+        </ul>
+    </div>
+        
+    <div class="info" id="DuergarInfo">
+        <ul>
+            <li></li>
+            <li><strong>Dwarven Resilience (base Dwarf racial):</strong> You have advantage on saving throws against poison, and have resistance to poison damage.</li>
+            <li><strong>Superior Darkvision:</strong> You can see in the dark up to 24m.</li>
+            <li><strong>Duergar Resilience:</strong> You have advantage on saving throws against illusions, as well as against being charmed or paralyzed.</li>
+            <li><strong>Enlarge (level 3):</strong> Make a creature larger, increasing weapon damage by 1d4 and giving it advantage on strength check and saving throws. Once per long rest.</li>
+            <li><strong>Invisibility (level 5):</strong> Turn invisible once per combat; no cooldown out of combat. </li>
+        </ul>
+    </div>
+
+    <h1 class="builds">
+        Illithid Powers
+        <br>	
+    </h1>
+    
+    <p align="left">Illithid powers are a unique power that the player can optionally choose to utilize. For the purposes of utilizing every powerup the game provides, builds will be built with Illithid powers in mind. However, all guides can still function without these powers. Below is a list of all illithid powers that synergize efficiently with the fighter class and all of its subclasses: </p>	
+    
+    <img src="images/illithidpowers.png" alt="Illithid Powers" id="illithid-image">
+    
+    <p align="left"><strong>Favourable Beginnings: </strong>This passive isn't significantly powerful, but it can be used for both dialogue and combat purposes. You primarily take this to unlock tier two illithid powers.</p>
+    
+    <p align="left"><strong>Luck of the Far Realms: </strong>This is one of the most powerful illithid powers simply because every class can utilize it. One free crit per long rest is very useful for setting up combos (i.e., on-crit effects) and choosing when to burst a target.</p>
+    
+    <p align="left"><strong>Perilous Stakes: </strong>One of the most underrated illithid powers in the game due to its healing nature. It is one of the most efficient ways in the game to apply Vulnerability (double damage) to an enemy, especially since it applies Vulnerability for all damage types (magic, physical).</p>
+    
+    <p align="left"><strong>Mind Sanctuary (Available in Act 3): </strong>This illithid power along with Perilous Stakes are core abilities for most martial class builds. As a fighter, actions are more valuable than bonus actions due to the "extra attack" passive. With Mind Sanctuary, the amount of attacks a Fighter can achieve in one turn significantly increases. </p>
+    
+    <h1 class="builds">
+        Permanent Buffs
+        <br>	
+    </h1>
+    
+    <p align="left">Throughout the game there are instances where one character or an entire party can receive permanent buffs. The ideal buffs for the fighter class are listed below:<br></p>
+    
+    <p align="center" id="clickText2">SPOILERS CLICK HERE TO VIEW THIS SECTION</p>
+    
+    <div id="container2">
+        <p align="left" style="font-size: 22pt"><strong>Act 1</strong></p>
+        <p align="left">
+            <strong> Auntie Ethel's Hair:</strong> Easily missable. Requires the player to get Auntie Ethel to 10% health in her lair. Provides a +1 to any Ability Score. This can be used to reach an even 18 without a feat.</p>
+        <p align="left">
+            <strong> Volo's Ersatz Eye:</strong> Replaces one eye with a magical alternative that provides a permanent "See Invisibility" effect, allowing the one character to see invisible creatures within 9 meters. 
+        </p>
+        <p align="left">
+            <strong> Awakened:</strong> Allows the use of Illithid powers as a bonus action instead of an action. Useful since actions are more valuable for a fighter than bonus actions.
+        </p>
+        <p align="left">
+            <strong> BOOOAL's Benediction:</strong> This buff provides advantage on attack rolls against bleeding targets. This buff requires the player to sacrifice one companion (no hirelings), but the buff is applied to all party members.
+        </p>	
+        <p align="left" style="font-size: 22pt"><strong>Act 2</strong></p>
+        <p align="left">
+            <strong> Potion of Everlasting Vigour:</strong> Provides +2 Strength to whoever drinks it. Requires Astarion to be a companion/origin character.
+        </p>
+        <p align="left" style="font-size: 22pt"><strong>Act 3</strong></p>
+        <p align="left">
+            <strong> Bless:</strong> Provides one character with a permanent bless at all times (+1d4 bonus on attack rolls and saving throws). This is the most expensive permanent buff (5000 gold).
+        </p>
+        <p align="left">
+            <strong> Tharchiate Coxex Blessing:</strong> Gives one character +20 temporary hit points per long rest. This is very useful to have before going into a boss fight.
+        </p>
+        <p align="left">
+            <strong> Mirror of Loss:</strong> Gives a character +2 ability score of their choosing in exchange for -2 from another ability score. However, the -2 can be decursed resulting in a free +2 to any stat.
+        </p>	
+    </div>
+    
+    <script src="script.js"></script>	
+    
+    </div>
+</body>
+</html>

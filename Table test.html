@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style for the tooltip container */
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style for the tooltip trigger element container */
+        .tooltip-trigger-container {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            color: black;
+        }
+
+        /* Style for the tooltip trigger element */
+        .tooltip-trigger {
+            display: inline-block; /* Make it inline so it's on the same line as "Text before" */
+        }
+
+        /* Style for the tooltip content */
+        .tooltip-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 5px;
+            width: 450px; /* Adjust the width as needed */
+        }
+
+        /* Style for the tooltip image */
+        .tooltip-content img {
+            max-width: 150px;
+            height: auto;
+            float: left; /* Float the image to the left */
+            margin-right: 10px;
+            border: 1px solid gold; /* Add some spacing between the image and text */
+        }
+
+        /* Style for the tooltip text */
+        .tooltip-content p {
+            margin: 0;
+            background-color: black;
+            color: white;
+            /* Remove default margin for the paragraph */
+        }
+
+        /* Show the tooltip content when hovering over the trigger element */
+        .tooltip-trigger-container:hover .tooltip-content {
+            display: block;
+        }
+
+        /* Constrain tooltip within the viewport */
+        .tooltip-trigger-container:hover .tooltip-content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        /* Adjust tooltip when near the top edge of the viewport */
+        .tooltip-trigger-container:hover .tooltip-content[data-edge="top"] {
+            top: 10px;
+        }
+
+        /* Adjust tooltip when near the left edge of the viewport */
+        .tooltip-trigger-container:hover .tooltip-content[data-edge="left"] {
+            left: 10px;
+        }
+
+        /* Adjust tooltip when near the right edge of the viewport */
+        .tooltip-trigger-container:hover .tooltip-content[data-edge="right"] {
+            left: auto; /* Remove left positioning to keep it right-aligned */
+            right: 10px; /* Adjust this value to control the spacing from the right edge */
+        }
+
+        /* Follow the cursor */
+        .tooltip-trigger-container:hover .tooltip-content.active {
+            position: fixed; /* Change the position to fixed */
+            top: calc(var(--cursor-y) - 10px); /* Adjust the offset as needed */
+            left: calc(var(--cursor-x) + 10px); /* Adjust the offset as needed */
+        }
+
+        /* Style for the table */
+        table {
+            width: 40%;
+            border-collapse: collapse;
+        }
+
+        /* Style for table cells */
+        th, td {
+          
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Style for table header */
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <title>Tooltip with Image and Text</title>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <th>Rank</th>
+            <th>Item</th>
+            <th>Source</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>Overall Best</td>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 9999">
+                Balduran's Giantslayer
+                <div class="tooltip-content">
+                    <img src="images/balduransgiantslayer.png" alt="Balduran's Giantslayer">
+                    <p style="font-size: 14px">Balduran's Giantslayer<br><span style="color: gold">Legendary</span><br>2d6+3 + Strength Modifier Damage<br>Weapon Type: Greatsword<br>
+                        Damage Type: Slashing<br>Giantslayer: On a hit, double the damage from your Strength Modifier. This weapon grants you Advantage on Attack Rolls against Large, Huge, or Gargantuan creatures.</p>
+                </div>
+            </td>
+            <td>Dropped by Ansur</td>
+            <td>Wyrm's Rock Prison (Act 3)</td>
+        </tr>
+		<tr>
+			<td>Githyanki Best</td>
+            <td class="tooltip-container tooltip-trigger-container" style="z-index: 9998">
+                Silver Sword of the Astral Plane
+                <div class="tooltip-content">
+                    <img src="images/silversword.png" alt="Silver Sword of the Astral Plane">
+                    <p style="font-size: 14px">Silver Sword of the Astral Plane<br><span style="color: gold">Legendary</span><br>2d6+3 + Strength Modifier Damage<br>Weapon Type: Greatsword<br>
+                        Damage Type: Slashing<br>Githborn Psionic Weapon: When wielded by a Githyanki this weapon deals an additional 1d6 Psychic damage.</p>
+                </div>
+            </td>
+            <td>Rewarded by Voss&nbsp;</td>
+            <td>Sharess' Caress (Act 3)</td>
+		</tr>
+		<tr>
+			<td>Easily Obtainable</td>
+          <td class="tooltip-container tooltip-trigger-container" style="z-index: 9997">
+                Nyrulna
+            <div class="tooltip-content">
+                    <img src="images/nyrulna.png" alt="Nyrulna">
+                    <p style="font-size: 14px">Nyrulna<br><span style="color: gold">Legendary</span><br>1d8+3 + Strength Modifier Damage<br>Weapon Type: Trident<br>
+                        Damage Type: Piercing<br>Zephyr Connection: This weapon will return to your hand when thrown. You cannot be forced to drop the trident. When thrown, the weapon creates an explosion that deals 3d4 thunder damage in a 6m blast centered on the target.</p>
+                </div>
+            </td>
+            <td>Obtained from Painted Chest</td>
+            <td>Circus of the Last Days (Act 3)</td>
+		</tr>
+    </table>
+
+    <script>
+        const tooltipTriggerContainers = document.querySelectorAll('.tooltip-trigger-container');
+
+        tooltipTriggerContainers.forEach((tooltipTriggerContainer) => {
+            tooltipTriggerContainer.addEventListener('mousemove', (e) => {
+                // Set CSS variables to store cursor position
+                document.documentElement.style.setProperty('--cursor-x', e.clientX + 'px');
+                document.documentElement.style.setProperty('--cursor-y', e.clientY + 'px');
+
+                // Update the tooltip position
+                const tooltipContent = tooltipTriggerContainer.querySelector('.tooltip-content');
+                tooltipContent.style.transform = 'none';
+                tooltipContent.classList.add('active');
+            });
+
+            tooltipTriggerContainer.addEventListener('mouseleave', () => {
+                // Hide the tooltip when leaving the trigger element
+                const tooltipContent = tooltipTriggerContainer.querySelector('.tooltip-content');
+                tooltipContent.style.transform = 'translate(-100%, -100%)';
+                tooltipContent.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
